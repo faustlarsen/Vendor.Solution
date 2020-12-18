@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace XY.Controllers
+
+namespace VendorTracker.Controllers
 {
 
-    public class XY : Controller
+    public class VendorsControlller : Controller
     {
 
     }

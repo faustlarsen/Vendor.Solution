@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace XY.Controllers
+namespace VendorTracker.Controllers
 {
 
-    public class YX : Controller
+    public class OrdersControlller : Controller
     {
 
     }
