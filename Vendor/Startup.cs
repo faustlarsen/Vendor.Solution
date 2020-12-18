@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace XY
+namespace VendorTracker
 {
   public class Startup
   {
@@ -26,8 +26,6 @@ namespace XY
     public void Configure(IApplicationBuilder app)
     {
       app.UseDeveloperExceptionPage();
-
-      // app.UseStaticFiles(); 
 
       app.UseMvc(routes =>
       {

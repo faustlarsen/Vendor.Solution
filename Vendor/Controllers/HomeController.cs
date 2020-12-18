@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace XY.Controllers
+namespace VendorTracker.Controllers
 {
   public class Homecontroller : Controller
   {
@@ -9,6 +9,5 @@ namespace XY.Controllers
     {
       return View();
     }
-    
   }
 }
