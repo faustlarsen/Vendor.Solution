@@ -27,5 +27,14 @@ namespace VendorTracker.Tests
             string result = newVendor.Name;
             Assert.AreEqual(name, result);
         }
+
+        [TestMethod]
+        public void GetId_ReturnVendorId_Int()
+        {
+            string name = "test";
+            Vendor newVendor = new Vendor(name);
+            int result = newVendor.Id;
+            Assert.AreEqual(1,result);
+        }
     }
 }
