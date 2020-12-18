@@ -15,7 +15,7 @@ namespace VendorTracker.Tests
         [TestMethod]
         public void OrderConstructor_CreatesInstanceOfOrder_Order()
         {
-            Order newOrder = new Order("test");
+            Order newOrder = new Order("test", "test", "test", "test");
             Assert.AreEqual(typeof(Order), newOrder.GetType());
         }
 
@@ -23,7 +23,10 @@ namespace VendorTracker.Tests
         public void GetName_ReturnsName_String()
         {
             string name = "test";
-            Order newVendor = new Order(name);
+            string description = "new test";
+            string price = "$1";
+            string date = "December 18";
+            Order newVendor = new Order (name, description, price, date);
             string result = newVendor.Name;
             Assert.AreEqual(name, result);
         }
