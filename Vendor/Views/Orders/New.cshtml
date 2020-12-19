@@ -1,24 +1,30 @@
-<h1>Add New Order to the @Model.Name</h1>
-
-  <form action="/vendor/@Model.Id/order" method="post"> <!-- submits the form-->
-    <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-    <br>
-    <br>
-    <label for="orderName">Order Name</label>
-    <input id="orderName" name="orderName" type="text">
-    <br>
-    <br>
-    <label for="orderDescription">Order Description</label>
-    <input id="orderDescription" name="orderDescription" type="text">
-    <br>
-    <br>
-    <label for="orderPrice">Order Price</label>
-    <input id="orderPrice" name="orderPrice" type="text">
-    <br>
-    <br>
-    <label for="orderDate">Order Date</label>
-    <input id="orderDate" name="orderDate" type="text">
-    <br>
-    <br>
-    <button type="submit">Submit</button>
-  </form>
+@{
+  Layout = "_Layout";
+}
+<div class="container card">
+  <h2>ADD NEW ORDER FOR THE <em><strong>@Model.Name</strong></em> VENDOR</h2>
+    <form action="/vendor/@Model.Id/order" method="post">
+      <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+      <br>
+      <br>
+      <input id="orderName" name="orderName" type="text">
+      <label for="orderName">NAME</label>
+      <br>
+      <br>
+      <input id="orderDescription" name="orderDescription" type="text">
+      <label for="orderDescription">DESCRIPTION</label>
+      <br>
+      <br>
+      <input id="orderPrice" name="orderPrice" type="text">
+      <label for="orderPrice">PRICE</label>
+      <br>
+      <br>
+      <input id="orderDate" name="orderDate" type="text">
+      <label for="orderDate">DATE</label>
+      <br>
+      <br>
+      <button class="btn btn-primary" type="submit">SUBMIT</button>
+      <br>
+      <br>
+    </form>
+</div>

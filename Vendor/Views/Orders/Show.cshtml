@@ -1,12 +1,20 @@
-<h1>Vendor Order Details: </h1>
-
-  <h3>@Model["vendor"].Name</h3>
-  <h2>@Model["order"].Name</h2>
-  <h2>@Model["order"].Description</h2>
-  <h2>@Model["order"].Price</h2>
-  <h2>@Model["order"].Date</h2>
-
-  <a href='/vendor/@Model["vendor"].Id/orders/new'>Add Order</a>
-  <br>
-  <br>
-  <a href='/vendor'>View Vendors</a>
+@{
+  Layout = "_Layout";
+}
+<div class="container card">
+    <h1>ORDER DETAILS</h1>
+    
+    <h2>VENDOR:  @Model["vendor"].Name</h2>
+    <h4>ORDER:  @Model["order"].Name</h4>
+    <h4>DESCRIPTION:  @Model["order"].Description</h4>
+    <h4>PRICE:  @Model["order"].Price</h4>
+    <h4>DATE:  @Model["order"].Date</h4>
+    <br>
+    <br>
+    <a href='/vendor/@Model["vendor"].Id/orders/new'><strong>ADD ORDER</strong></a>
+    <br>
+    <br>
+    <a href='/vendor'><strong>VENDORS'S LIST</strong></a>
+    <br>
+    <br>
+</div>
