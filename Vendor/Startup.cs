@@ -38,7 +38,6 @@ namespace VendorTracker
         {
           await context.Response.WriteAsync("Something went wrong!");
         });
-
     }
   }
 }

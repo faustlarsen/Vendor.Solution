@@ -1,6 +1,6 @@
 @using VendorTracker.Models;
 
-<h1>Vendors</h1>
+<h1>Vendor's List</h1>
 
 @if (@Model.Count == 0)
 {
@@ -9,8 +9,8 @@
 
 @foreach (Vendor vendor in Model)
 {
-  <h3><a href='/vendor/@vendor.Id'>  @vendor.Name</a> | @vendor.Description</h3>
+  <h3><a href='/vendors/@vendor.Id'>  @vendor.Name</a> | @vendor.Description</h3> <!-- RESOLVED sends to vendors order list-->
 }
 
-<h5><a href='/vendor/new'>Add a new Vendor</h5>
-<h5><a href='/'>Back home</a></h5>
+<h5><a href='/vendor/new'>Add New Vendor</h5>  <!--RESOLVED -->
+<h5><a href='/'>Home</a></h5>
