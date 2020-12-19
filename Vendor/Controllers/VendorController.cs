@@ -53,9 +53,9 @@ namespace VendorTracker.Controllers
         [HttpPost("/vendors/delete")]
         public ActionResult DeleteAll()
         {
-        Vendor.ClearAll();
-        return View();
-    }
+            Vendor.ClearAll();
+            return View();
+        }
 
     }
 }

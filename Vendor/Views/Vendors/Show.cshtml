@@ -1,12 +1,9 @@
 @{
   Layout = "_Layout";
 }
-
 @using VendorTracker.Models;
-
 <div class="container card"> 
     <h1>ORDERS FOR THIS VENDOR</h1>
-
     @foreach (Order order in @Model["order"])
     {
         <li><a href='/vendor/@Model["vendor"].Id/orders/@order.Id'>@order.Name</a></li> 
@@ -15,10 +12,10 @@
     <br>
     <p><a href='/vendor/@Model["vendor"].Id/orders/new'><strong>NEW ORDER</strong></a></p> 
     <p><a href='/vendor'><strong>VENDOR'S LIST</strong></a></p>
-
     <form action="/vendors/delete" method="post">
-      <button type="submit" class="btn btn-primary" name="button">CLEAR</button>
-      <br>
-      <br>
+        <button type="submit" class="btn btn-primary" name="button">CLEAR</button>
+        <br>
+        <br>
     </form>
 </div>
+
