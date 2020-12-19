@@ -10,21 +10,21 @@ _This web app will offer to add a vevdors and an ability to add orders to each v
 
 ### SPECS: ###
 
-1. SPEC: 
+1. SPEC: Create Vendor class with name, description and id.
 
-**Input**: 
+**Input**: "Suzie's Cafe" , "Coffe shop" 
 
-**Output**: 
+**Output**: "Suzie's Cafe" , "Coffe shop" , Id:1
 ____________________________________________________________________________________
 
-2. SPEC: 
+2. SPEC: Create Order class with name, description, price, date and id.
 
-**Input**:
+**Input**:  "Suzie's Cafe" , "10 Croissants" , $10
 
-**Output**: 
+**Output**: "Suzie's Cafe" , "10 Croissants" , $10 , Id:1
 ____________________________________________________________________________________
 
-3. SPEC: 
+3. SPEC: Create iput forms for orders and  vendors and pages to navigate between them.
 
 **Input**: 
 
