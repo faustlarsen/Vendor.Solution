@@ -1,12 +1,12 @@
 @{
-  Layout = "_Layout";
+    Layout = "_Layout";
 }
 @using VendorTracker.Models;
 <div class="container card"> 
     <h1>ORDERS FOR THIS VENDOR</h1>
     @foreach (Order order in @Model["order"])
     {
-        <li><a href='/vendor/@Model["vendor"].Id/orders/@order.Id'>@order.Name</a></li> 
+        <li><a href='/vendor/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li> 
     }
     <br>
     <br>

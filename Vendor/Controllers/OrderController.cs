@@ -23,12 +23,5 @@ namespace VendorTracker.Controllers
             model.Add("vendor", vendor);
             return View(model);
         }
-
-        [HttpPost("/orders/delete")]
-        public ActionResult DeleteAll()
-        {
-            Vendor.ClearAll();
-            return View();
-        }
     }
 } 
