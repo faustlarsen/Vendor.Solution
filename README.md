@@ -43,6 +43,13 @@ ________________________________________________________________________________
 -  `$ dotnet build` - it will compile the app
 -  `$ cd Vendor` - it will navigate to the launching directory
 -  `$ dotnet run` - it will prep the app for launching. Then in console click on (localhost:5000/) to view the app in the browser
+TESTING
+- Navigate into Vendor directory
+-  `$ ls` - to see which directory you are currently in
+-  `$ cd ..` - to exit Vendor directory
+-  `$ cd Vendor.Tests` - to navigate into Vendor.Tests directory.
+-  `$ dotnet restor` then `$ dotnet build` - to make code is compiled and packages are installed
+-  `$ dotnet test` to run test on all methods
 
 ## Known Bugs
 
